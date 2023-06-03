@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //换壁纸
     public void exchangeBg(){
         pref = getSharedPreferences("bg_pref", MODE_PRIVATE);
-        bgNum = pref.getInt("bg", 2);
+        bgNum = pref.getInt("bg", 1);
         switch (bgNum) {
             case 0:
                 outLayout.setBackgroundResource(R.mipmap.bg1);

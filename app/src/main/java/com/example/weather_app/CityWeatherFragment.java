@@ -60,29 +60,10 @@ public class CityWeatherFragment extends BaseFragment implements View.OnClickLis
         airIndexTv.setOnClickListener(this);
     }
 
-    //换壁纸的函数
-    public void exchangeBg(){
-        pref = getActivity().getSharedPreferences("bg_pref", MODE_PRIVATE);
-        bgNum = pref.getInt("bg", 1);
-        switch (bgNum) {
-            case 0:
-                outLayout.setBackgroundResource(R.mipmap.bg1);
-                break;
-            case 1:
-                outLayout.setBackgroundResource(R.mipmap.bg2);
-                break;
-            case 2:
-                outLayout.setBackgroundResource(R.mipmap.bg3);
-                break;
-        }
-
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_city_weather, container, false);
         initView(view);
-        exchangeBg();
         //可以通过activity传值获取到当前fragment加载的是那个地方的天气情况
         Bundle bundle = getArguments();
         city = bundle.getString("city");

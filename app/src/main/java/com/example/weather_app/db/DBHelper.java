@@ -12,7 +12,7 @@ public class DBHelper extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
         //创建表的操作
-        String sql = "create table info(_id integer primary key autoincrement,city varchar(20) unique not null,content text not null)";
+        String sql = "create table info(_id integer primary key autoincrement, city varchar(20) unique not null, content text not null)";
         db.execSQL(sql);
     }
 
