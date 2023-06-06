@@ -31,8 +31,6 @@ public class CityWeatherFragment extends BaseFragment implements View.OnClickLis
     ScrollView outLayout;
     JHIndexBean.ResultBean.LifeBean lifeBean;    //指数信息
     String city;
-    private SharedPreferences pref;
-    private int bgNum;
 
     private void initView(View view) {
         //用于初始化控件操作
