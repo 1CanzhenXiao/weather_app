@@ -2,7 +2,7 @@ package com.example.weather_app.juhe;
 
 public class URLUtils {
 
-    public static final String KEY = "778c3d6e4d1a04f3b88eec5c842a58cf";
+    public static final String KEY = "temp778c3d6e4d1a04f3b88eec5c842a58cf";
     public static String temp_url = "http://apis.juhe.cn/simpleWeather/query";
     public static String index_url = "http://apis.juhe.cn/simpleWeather/life";
 
